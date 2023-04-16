@@ -38,6 +38,7 @@ const SearchHistory = () => {
             : searchResultsList.map((item, index) => (
                 <View key={index} style={styles.historyItem}>
                   <TouchableOpacity
+                    style={styles.descriptionContainer}
                     onPress={() => handleSearchHistoryItem(item)}>
                     <Text style={styles.historyDesc}>
                       {item.formatted_address}
@@ -75,10 +76,13 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'space-between',
   },
+  descriptionContainer: {
+    flex: 1,
+  },
   historyDesc: {
     fontSize: 20,
     fontWeight: 800,
-    marginRight: 25,
+    paddingRight: 35,
   },
 });
 

@@ -114,15 +114,17 @@ const styles = StyleSheet.create({
   input: {
     height: 40,
     borderWidth: 1,
-    marginTop: 25,
+    marginTop: 10,
     paddingHorizontal: 10,
-    marginHorizontal: 20,
+    // marginRight: 20,
+    marginHorizontal: 60,
     position: 'relative',
   },
   list: {
     position: 'absolute',
-    top: 65,
-    paddingHorizontal: 10,
+    top: 50,
+    paddingHorizontal: 60,
+    overflow: 'scroll',
   },
   map: {
     flex: 5,
